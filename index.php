@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Smart School</title>
+	<link href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
