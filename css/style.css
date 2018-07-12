@@ -1,4 +1,87 @@
 body{
 	text-align: justify-all;
+	overflow-x: hidden;
+	height: auto;
+	background-color: #E3E3E3;
+}
+
+header{
+	font-size: 20px;
 	padding: 10px;
+	color: #403783;
+	background-color: #FFF;
+}
+
+.title{
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.home-tagline{
+	font-size: 20px;
+	color: #524C4C;
+}
+
+.sidenav{
+	color: #FBF5F3;
+	background-color: #403783;
+	height: 100%;
+	position: fixed;
+	z-index: 1;
+	overflow-x: hidden;
+	padding: 20px;
+}
+
+.sidenav a{
+	color: #FBF5F3;
+	font-size: 25px;
+	display: block;
+	padding: 10px;
+}
+
+.sidenav a:hover{
+	color: #1A936F;
+	text-decoration: none;
+}
+
+.fig-caption{
+	font-size: 20px;
+	padding-top: 10px;
+}
+
+.sidenav-tagline{
+	font-size: 13px;
+	font-style: italic;
+	margin-bottom: 25px;
+}
+
+.description{
+	font-size: 20px;
+	margin-left: 300px;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	padding: 20px;
+	padding-left: 30px;
+}
+
+.box{
+	border-radius: 20px;
+	padding: 20px;
+	width: 500px;
+	height: auto;
+	color: #FBF5F3;
+	margin: 10px;
+}
+
+.box:first-child{
+	background-color: #59B395;	
+}
+
+.box:nth-child(2){
+	background-color: #499B99;	
+}
+
+.box:last-child{
+	background-color: #6E2B94;	
 }
