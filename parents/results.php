@@ -38,7 +38,7 @@
 				</div>
 				<div id="collapse1" class="panel-collapse collapse">
 						<div class="panel panel-default">
-							<div class="panel-heading text-center"><p class="title">Kathmandu High Shcool</p><p class="home-tagline">First Terminal Examination (Baishakh-Ashadh)</p></div>
+							<div class="panel-heading text-center"><p class="title">Kathmandu High School</p><p class="home-tagline">First Terminal Examination (Baishakh-Ashadh)</p></div>
 							<div class="panel-body">
 								<div class="row" id="total-contents">
 									<div class="col-md-2">
@@ -171,7 +171,7 @@
 				</div>
 				<div id="collapse2" class="panel-collapse collapse">
 						<div class="panel panel-default">
-							<div class="panel-heading text-center"><p class="title">Kathmandu High Shcool</p><p class="home-tagline">Second Terminal Examination (Shrawan-Kartik)</p></div>
+							<div class="panel-heading text-center"><p class="title">Kathmandu High School</p><p class="home-tagline">Second Terminal Examination (Shrawan-Kartik)</p></div>
 							<div class="panel-body">
 								<div class="row" id="total-contents">
 									<div class="col-md-2">
