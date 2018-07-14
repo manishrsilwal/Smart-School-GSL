@@ -1,8 +1,25 @@
-body{
+* {
+    box-sizing: border-box;
+    margin:0;
+}
+
+html, body{
+  	position: relative;
 	text-align: justify-all;
-	overflow-x: hidden;
+	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
 	height: auto;
 	background-color: #E3E3E3;
+	overflow-x: hidden;
+}
+
+.middle{
+	top: 50%;
+	position: fixed;
+	height: 200px;
+    width: 400px;
+    margin-top: -100px;
+    margin-left: 800px;
 }
 
 header{
@@ -10,11 +27,28 @@ header{
 	padding: 10px;
 	color: #403783;
 	background-color: #FFF;
+	position: fixed;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+.content{
+	margin-top: 73px;
 }
 
 .title{
 	font-size: 30px;
 	font-weight: bold;
+}
+
+.menu{
+	font-size: 20px;
 }
 
 .home-tagline{
@@ -28,8 +62,13 @@ header{
 	height: 100%;
 	position: fixed;
 	z-index: 1;
-	overflow-x: hidden;
 	padding: 20px;
+}
+
+.active{
+	background-color: #6E2B94;
+	text-decoration: none;
+	border-left: 4px solid red;
 }
 
 .sidenav a{
@@ -58,20 +97,19 @@ header{
 .description{
 	font-size: 20px;
 	margin-left: 300px;
-	height: 100%;
-	width: 100%;
-	position: fixed;
-	padding: 20px;
 	padding-left: 30px;
+	padding-right: 30px;
+	position: inherit;
 }
 
 .box{
 	border-radius: 20px;
 	padding: 20px;
-	width: 500px;
+	width: 490px;
 	height: auto;
 	color: #FBF5F3;
 	margin: 10px;
+	position: inherit;
 }
 
 .box:first-child{
@@ -84,4 +122,25 @@ header{
 
 .box:last-child{
 	background-color: #6E2B94;	
+}
+
+#total-contents{
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 20px;
+}
+
+
+table.table-bordered > thead > tr > th{
+  border:1px solid black;
+}
+
+table.table-bordered{
+    border:1px solid black;
+    margin-top:20px;
+}
+
+  
+table.table-bordered > tbody > tr > td{
+    border:1px solid black;
 }
