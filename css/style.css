@@ -72,14 +72,14 @@ a:hover{
 	border-left: 4px solid red;
 }
 
-.sidenav a{
+.sidenav a, .dropdown-btn{
 	color: #FBF5F3;
 	font-size: 25px;
 	display: block;
 	padding: 10px;
 }
 
-.sidenav a:hover{
+.sidenav a:hover, .dropdown-btn:hover{
 	color: #1A936F;
 	text-decoration: none;
 }
@@ -148,4 +148,20 @@ table.table-bordered > tbody > tr > td{
 
 table tr td button {
 	width: 200px;
+}
+
+.dropdown-container {
+    display: none;
+    background-color: inherit;
+    padding-left: 8px;
+}
+
+.dropdown-container a{
+	font-size: 18px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 15px;}
 }
