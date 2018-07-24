@@ -5,12 +5,13 @@ include("header.php");
 <div class="row content">
 		<div class="col-sm-2 sidenav">
 			<center>
-				<div class="figure"><img src="../images/list.png" class="img-circle" height="150" width="150"></div>
+				<div class="figure"><img src="../images/logo.jpg" class="img-circle img-thumbnail" height="150" width="150"></div>
 				<div class="fig-caption">Kathmandu High School<br /><div class="sidenav-tagline">Quality Education for Leadership</div></div>
 			</center>
 			<a href="../teacher"><i class="fas fa-home"></i>&nbsp;&nbsp;&nbsp;Home</a>
 			<a href="../teacher/marksentry.php"><i class="fas fa-marker"></i>&nbsp;&nbsp;&nbsp;Marks Entry</a>
 			<a href="../teacher/attendance.php" class="active"><i class="fas fa-book-open"></i>&nbsp;&nbsp;&nbsp;Attendance</a>
+			<a href="../teacher/homeworkentry.php"><i class="fas fa-edit"></i>&nbsp;&nbsp;&nbsp;Assign Work</a>
 			<a href="../teacher/student-info.php"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;Student Info</a>
 			<a href="#"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;Messages</a>
 		</div>
@@ -87,28 +88,28 @@ include("header.php");
 					<tbody>
 						<tr>
 							<td class="col-md-2">1.</td>
-							<td class="col-md-8">Kawish Bhakta Shrestha</td>
-							<td class="col-md-2"><input type="checkbox" value="" class="form-control" id="absent"></td>
+							<td class="col-md-8"><img src="../images/profile/1.jpg" class="img-circle img-thumbnail" width="100" height="100"> Kawish Bhakta Shrestha</td>
+							<td class="col-md-2" style="vertical-align: middle;"><input type="checkbox" value="" class="form-control" id="absent"></td>
 						</tr>
 						<tr>
 							<td class="col-md-2">2.</td>
-							<td class="col-md-8">Rashika Karki</td>
-							<td class="col-md-2"><input type="checkbox" value="" class="form-control" id="absent"></td>
+							<td class="col-md-8"><img src="../images/profile/2.jpg" class="img-circle img-thumbnail" width="100" height="100"> Rashika Karki</td>
+							<td class="col-md-2" style="vertical-align: middle;"><input type="checkbox" value="" class="form-control" id="absent"></td>
 						</tr>
 						<tr>
 							<td class="col-md-2">3.</td>
-							<td class="col-md-8">Samayee Dhungel</td>
-							<td class="col-md-2"><input type="checkbox" value="" class="form-control" id="absent"></td>
+							<td class="col-md-8"><img src="../images/profile/3.jpg" class="img-circle img-thumbnail" width="100" height="100"> Samayee Dhungel</td>
+							<td class="col-md-2" style="vertical-align: middle;"><input type="checkbox" value="" class="form-control" id="absent"></td>
 						</tr>
 						<tr>
 							<td class="col-md-2">4.</td>
-							<td class="col-md-8">Kiran Neupane</td>
-							<td class="col-md-2"><input type="checkbox" value="" class="form-control" id="absent"></td>
+							<td class="col-md-8"><img src="../images/profile/4.jpg" class="img-circle img-thumbnail" width="100" height="100"> Kiran Neupane</td>
+							<td class="col-md-2" style="vertical-align: middle;"><input type="checkbox" value="" class="form-control" id="absent"></td>
 						</tr>
 						<tr>
 							<td class="col-md-2">5.</td>
-							<td class="col-md-8">Krishna Shrestha</td>
-							<td class="col-md-2"><input type="checkbox" value="" class="form-control" id="absent"></td>
+							<td class="col-md-8"><img src="../images/profile/5.png" class="img-circle img-thumbnail" width="100" height="100"> Krishna Shrestha</td>
+							<td class="col-md-2" style="vertical-align: middle;"><input type="checkbox" value="" class="form-control" id="absent"></td>
 						</tr>
 					</tbody>
 				</table>

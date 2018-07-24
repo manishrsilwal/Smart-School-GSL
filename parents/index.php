@@ -4,7 +4,7 @@
 	<div class="row content">
 		<div class="col-sm-2 sidenav">
 			<center>
-				<div class="figure"><img src="../images/list.png" class="img-circle" height="150" width="150"></div>
+				<div class="figure"><img src="../images/logo.jpg" class="img-circle" height="150" width="150"></div>
 				<div class="fig-caption">Kathmandu High School<br /><div class="sidenav-tagline">Quality Education for Leadership</div></div>
 			</center>
 			<a href="../parents" class="active"><i class="fas fa-home"></i>&nbsp;&nbsp;&nbsp;Home</a>
@@ -12,7 +12,7 @@
 			<a href="../parents/homework.php"><i class="fas fa-edit"></i>&nbsp;&nbsp;&nbsp;Homework</a>
 			<a href="../parents/results.php"><i class="fas fa-marker"></i>&nbsp;&nbsp;&nbsp;Results</a>
 			<a href="#"><i class="fas fa-money-bill-wave"></i>&nbsp;&nbsp;&nbsp;Fee Details</a>
-			<a href="#"><i class="fas fa-tasks"></i>&nbsp;&nbsp;&nbsp;Student Progress</a>
+			
 			<a href="#"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;Messages</a>
 		</div>
 
