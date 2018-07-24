@@ -53,8 +53,24 @@
 					<p><label>Email:</label> khadkadipesh09@gmail.com</p>
 					<p><label>Contact Number:</label> 9843251554</p>
 					<p><button class="btn btn-info">Click here for list of teachers</button></p>
-					<p><button class="btn btn-danger">Complaints <span class="badge">5</span></button></p>
-					<p><button class="btn btn-warning">Warnings <span class="badge">10</span></button></p>
+				</div>
+			</div>
+
+			<div class="row">
+			<div class="panel panel-success">
+				<div class="panel-heading">Academic Performance</div>
+				<div class="panel-body">						
+				<p><label>Score in First Terminal Exam:</label> 80.8%</p>
+				<p><label>Score in Second Terminal Exam:</label> 80.4%</p>
+			</div>
+			</div>
+			</div>
+			<div class="row">
+				<div class="panel panel-success">
+					<div class="panel-heading">Attendance Record</div>
+					<div class="panel-body">						
+					<p><label>Number of Absent Days:</label> 2</p>
+				</div>
 				</div>
 			</div>
 		</div>

@@ -11,6 +11,7 @@ html, body{
 	height: auto;
 	background-color: #E3E3E3;
 	overflow-x: hidden;
+	padding-bottom: 10px;
 }
 
 .middle{
@@ -143,4 +144,8 @@ table.table-bordered{
   
 table.table-bordered > tbody > tr > td{
     border:1px solid black;
+}
+
+table tr td button {
+	width: 200px;
 }

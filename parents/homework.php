@@ -60,31 +60,31 @@
 							<td class="col-md-1">1.</td>
 							<td class="col-md-3">Mathematics</td>
 							<td class="col-md-5">Exercise 2.5, Page Number 30</td>
-							<td class="col-md-3"><button class="btn btn-danger">Not Submitted Yet</button></td>
+							<td class="col-md-3 danger">Not Submitted Yet</td>
 						</tr>
 						<tr>
 							<td class="col-md-1">2.</td>
 							<td class="col-md-3">Science</td>
 							<td class="col-md-5">Read Page 50</td>
-							<td class="col-md-3"><button class="btn btn-success">Checked</button></td>
+							<td class="col-md-3 success">Checked</td>
 						</tr>
 						<tr>
 							<td class="col-md-1">3.</td>
 							<td class="col-md-3">English</td>
 							<td class="col-md-5">No Homework</td>
-							<td class="col-md-3"><button class="btn btn-info">No need of Submission</button></td>
+							<td class="col-md-3 Info">No need of Submission</td>
 						</tr>
 						<tr>
 							<td class="col-md-1">4.</td>
 							<td class="col-md-3">Nepali</td>
 							<td class="col-md-5">पेज १७ को हस्तलेखन</td>
-							<td class="col-md-3"><button class="btn btn-success">Checked</button></td>
+							<td class="col-md-3 success">Checked</td>
 						</tr>
 						<tr>
 							<td class="col-md-1">5.</td>
 							<td class="col-md-3">Computer Science</td>
 							<td class="col-md-5">No Homework</td>
-							<td class="col-md-3"><button class="btn btn-info">No need of Submission</button></td>
+							<td class="col-md-3 Info">No need of Submission</td>
 						</tr>
 					</tbody>
 				</table>

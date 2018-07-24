@@ -11,6 +11,7 @@
 		<a href="../teacher"><i class="fas fa-home"></i>&nbsp;&nbsp;&nbsp;Home</a>
 		<a href="../teacher/marksentry.php" class="active"><i class="fas fa-marker"></i>&nbsp;&nbsp;&nbsp;Marks Entry</a>
 		<a href="../teacher/attendance.php"><i class="fas fa-book-open"></i>&nbsp;&nbsp;&nbsp;Attendance</a>
+		<a href="../teacher/student-info.php"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;Student Info</a>
 		<a href="#"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;Messages</a>
 	</div>
 
@@ -59,8 +60,28 @@
 						<label>Subject: </label></div> <div class="col-sm-1">Mathematics</div>
 						<br />
 						<br />
+					</div>
+					<div class="row">
 						<div class="col-md-2">
-						<label for="Full-marks">Full Marks:</label>
+						<label for="Full-marks">Score of:</label>
+						</div>
+						<div class="col-md-10">
+							<div class="col-md-6">
+								<div class="checkbox"><label><input type="checkbox" value="">1<sup>st</sup> Monthly Test</label></div>
+								<div class="checkbox"><label><input type="checkbox" value="">2<sup>nd</sup> Monthly Test</label></div>
+								<div class="checkbox"><label><input type="checkbox" value="">3<sup>rd</sup> Monthly Test</label></div>
+							</div>
+							<div class="col-md-6">
+								<div class="checkbox"><label><input type="checkbox" value="">1<sup>st</sup> Terminal Exam</label></div>
+								<div class="checkbox"><label><input type="checkbox" value="">2<sup>nd</sup> Terminal Exam</label></div>
+								<div class="checkbox"><label><input type="checkbox" value="">3<sup>rd</sup> Terminal Exam</label></div>
+							</div>
+						</div>
+					</div>
+					<br />
+					<div class="row">
+						<div class="col-md-2">
+						<label for="Full-marks">Marks Entry for:</label>
 						</div>
 						<div class="col-md-2">
 						<input type="text" class="form-control" id="Full-marks">

@@ -11,6 +11,7 @@ include("header.php");
 			<a href="../teacher"><i class="fas fa-home"></i>&nbsp;&nbsp;&nbsp;Home</a>
 			<a href="../teacher/marksentry.php"><i class="fas fa-marker"></i>&nbsp;&nbsp;&nbsp;Marks Entry</a>
 			<a href="../teacher/attendance.php" class="active"><i class="fas fa-book-open"></i>&nbsp;&nbsp;&nbsp;Attendance</a>
+			<a href="../teacher/student-info.php"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;Student Info</a>
 			<a href="#"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;Messages</a>
 		</div>
 
