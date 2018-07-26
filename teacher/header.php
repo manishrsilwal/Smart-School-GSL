@@ -13,6 +13,7 @@
 	<link href="../fontawesome/css/all.css" rel="stylesheet">
 	<script type="text/javascript" src="../bootstrap/js/jquery.js"></script>
 	<script type="text/javascript" src="../bootstrap/js/bootstrap.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/teacher-style.css">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>

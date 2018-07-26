@@ -10,7 +10,7 @@
 			<a href="../teacher" class="active"><i class="fas fa-home"></i>&nbsp;&nbsp;&nbsp;Home</a>
 			<a href="../teacher/marksentry.php"><i class="fas fa-marker"></i>&nbsp;&nbsp;&nbsp;Marks Entry</a>
 			<a href="../teacher/attendance.php"><i class="fas fa-book-open"></i>&nbsp;&nbsp;&nbsp;Attendance</a>
-			<a class="btn dropdown-btn"><i class="fas fa-edit dropdown-toggle"></i>&nbsp;&nbsp;&nbsp;Assignments &nbsp;&nbsp;&nbsp;<span class="caret"></span></a>
+			<a class="dropdown-btn"><i class="fas fa-edit dropdown-toggle"></i>&nbsp;&nbsp;&nbsp;Assignments &nbsp;&nbsp;&nbsp;<span class="caret"></span></a>
 			<div class="dropdown-container">
 		    <a href="../teacher/homeworkentry.php"><i class="fas fa-pencil-alt"></i>&nbsp;&nbsp;&nbsp;Assign the Work</a>
 		    <a href="../teacher/homeworkcheck.php"><i class="fas fa-check"></i>&nbsp;&nbsp;&nbsp;Check the Work</a>
@@ -21,48 +21,89 @@
 
 		<div class="col-sm-10 description">
 			<div class="page-header title">Home<p class="home-tagline">Welcome back, <i>Prof. Dipesh Khadka</i></p></div>
-			<div class="row text-center">
-				<div class="col-sm-4 box">
-					<p>31</p>
-					<p>New Messages</p>
-				</div>
-				<div class="col-sm-4 box">
-					<p>5</p>
-					<p>Task Deadline</p>
-				</div>
-				<div class="col-sm-4 box">
-					<p>3</p>
-					<p>Complaints Recieved</p>
+			<div class="row" id="total-contents">
+				<div class="page-header"><h3>Your time-table for Academic Year 2075</h3></div>
+
+				<div class="table-responsive text-center">
+					<table class="table table-bordered">
+						<thead>
+							<th>Day&nbsp;/&nbsp;Time <i class="fas fa-arrow-right"></i><br /><i class="fas fa-arrow-down"></i></th>
+							<th style="vertical-align: middle;">9:00 - 10:00</th>
+							<th style="vertical-align: middle;">10:00 - 11:00</th>
+							<th style="vertical-align: middle;">11:00 - 12:00</th>
+							<th style="vertical-align: middle;">12:00 - 13:00</th>
+							<th style="vertical-align: middle;">13:00 - 14:00</th>
+							<th style="vertical-align: middle;">14:00 - 15:00</th>
+							<th style="vertical-align: middle;">15:00 - 16:00</th>
+						</thead>
+						<tbody>
+							<tr>
+							<th>Sunday</th>
+							<td>Class 9<br />Opt. Math</td>
+							<td></td>
+							<td></td>
+							<td>Lunch</td>
+							<td>Class 10<br />Math</td>
+							<td></td>
+							<td>Class 8<br />Math</td>
+							</tr>
+							<tr>
+							<th>Monday</th>
+							<td>Class 10<br />Math</td>
+							<td>Class 9<br />Opt. Math</td>
+							<td></td>
+							<td>Lunch</td>
+							<td></td>
+							<td>Class 8<br />Math</td>
+							<td></td>
+							</tr>
+							<tr>
+							<th>Tuesday</th>
+							<td>Class 10<br />Math</td>
+							<td></td>
+							<td>Class 9<br />Opt. Math</td>
+							<td>Lunch</td>
+							<td></td>
+							<td></td>
+							<td>Class 8<br />Math</td>
+							</tr>
+							<tr>
+							<th>Wednesday</th>
+							<td>Class 10<br />Math</td>
+							<td></td>
+							<td></td>
+							<td>Lunch</td>
+							<td>Class 9<br />Opt. Math</td>
+							<td>Class 8<br />Math</td>
+							<td></td>
+							</tr>
+							<tr>
+							<th>Thursday</th>
+							<td></td>
+							<td>Class 9<br />Opt. Math</td>
+							<td>Class 8<br />Math</td>
+							<td>Lunch</td>
+							<td></td>
+							<td>Class 10<br />Math</td>
+							<td></td>
+							</tr>
+							<tr>
+							<th>Friday</th>
+							<td>Class 8<br />Math</td>
+							<td></td>
+							<td>Class 10<br />Math</td>
+							<td>Lunch</td>
+							<td></td>
+							<td>Class 9<br />Opt. Math</td>
+							<td></td>
+							</tr>
+					</tbody>
+						
+					</table>
 				</div>
 			</div>
 
-			<div class="row">
-				<div class="panel-group">
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<div class="panel-title">
-								<div class="row">
-									<a data-toggle="collapse" href="#collapse1">
-									<div class="col-sm-6 menu">
-										<i class="fas fa-newspaper"></i>&nbsp;&nbsp;&nbsp;News and Announcement
-									</div>
-									<div class="col-sm-6" align="right">
-										<i class="fas fa-chevron-circle-down fa-2x"></i>
-									</div>
-									</a>
-								</div>
-							</div>
-						</div>
-						<div id="collapse1" class="panel-collapse collapse">
-							<ul class="list-group">
-								<li class="list-group-item">News 1</li>
-								<li class="list-group-item">News 2</li>
-								<li class="list-group-item">News 3</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
+			
 		</div>
 	</div>
 

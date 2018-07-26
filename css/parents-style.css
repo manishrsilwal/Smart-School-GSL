@@ -1,0 +1,21 @@
+header{
+	color: #403783;
+	background-color: #FFF;
+}
+
+.sidenav{
+	color: #FBF5F3;
+	background-color: #403783;
+}
+
+.active{
+	background-color: #6E2B94;
+}
+
+.sidenav a, .dropdown-btn{
+	color: #FBF5F3;
+}
+
+.sidenav a:hover, .dropdown-btn:hover{
+	color: #1A936F;
+}
