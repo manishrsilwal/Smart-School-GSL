@@ -2,6 +2,60 @@
 	include("header.php");
 ?>
 
+<div class="sidebar" data-color="white" data-active-color="danger">
+      <!--
+        Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
+    -->
+            <div class="logo">
+                <a href="#" class="simple-text logo-mini">
+	            	<div class="logo-small-image">
+	            		<img src="../images/logo.jpg">
+	            	</div>
+            	</a>
+                <a href="#" class="simple-text logo-normal">
+                    Smart School
+                </a>
+            </div>
+            <div class="sidebar-wrapper">
+                <ul class="nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../teacher">
+                            <i class="nc-icon nc-layout-11"></i>
+                            <p>Dashboard</p>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="../teacher/attendance.php">
+                            <i class="nc-icon nc-single-02"></i>
+                            <p>Attendance</p>
+                        </a>
+                    </li>
+                    <li class="nav-item btn-rotate dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="nc-icon nc-tile-56"></i>
+                            Homeworks &nbsp;
+                        </a>
+
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Assign the Work</a>
+                                    <a class="dropdown-item" href="#">Check the Work</a>
+                                </div>
+                    </li>
+                    <li class="nav-item btn-rotate dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="nc-icon nc-paper"></i>
+                            Exam Section &nbsp;
+                        </a>
+
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="../teacher/marksentry.php">Enter the Marks</a>
+                                    <a class="dropdown-item" href="#">View the Marksheet</a>
+                                </div>
+                    </li>
+                </ul>
+            </div>
+</div>
+
 <div class="row content">
 	<div class="col-sm-2 sidenav">
 		<center>

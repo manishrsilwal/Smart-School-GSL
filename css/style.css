@@ -3,31 +3,12 @@
 }
 
 html, body{
-  	position: relative;
 	text-align: justify-all;
 	-webkit-font-smoothing: antialiased;
   	-moz-osx-font-smoothing: grayscale;
 	height: auto;
-	background-color: #E3E3E3;
 	overflow-x: hidden;
-	padding-bottom: 10px;
-}
-
-.middle{
-	top: 50%;
-	position: fixed;
-	height: 200px;
-    width: 400px;
-    margin-top: -100px;
-    margin-left: 800px;
-}
-
-header{
-	font-size: 18px;
-	padding: 12px;
-	width: 100%;
-	background-color: #FFF;
-	position: fixed;
+	font-size: 16px;
 }
 
 a{
@@ -39,63 +20,26 @@ a:hover{
 }
 
 .content{
-	margin-top: 73px;
-}
-
-.title{
-	font-size: 25px;
-	font-weight: bold;
-}
-
-.menu{
-	font-size: 18px;
-}
-
-.home-tagline{
-	font-size: 18px;
-	color: #524C4C;
-}
-
-.sidenav{
-	height: 100%;
-	position: fixed;
-	z-index: 1;
-	padding: 20px;
-}
-
-.active{
-	text-decoration: none;
-	border-left: 4px solid red;
-}
-
-.sidenav a, .dropdown-btn{
-	font-size: 18px;
-	display: block;
-	padding: 10px;
-}
-
-.sidenav a:hover, .dropdown-btn:hover{
-	text-decoration: none;
-}
-
-.fig-caption{
-	font-size: 18px;
-	padding-top: 10px;
-}
-
-.sidenav-tagline{
-	font-size: 13px;
-	font-style: italic;
-	margin-bottom: 25px;
+	margin-top: 60px;
+	padding-right: 20px;
 }
 
 .description{
-	margin-left: 300px;
-	padding-left: 30px;
-	padding-right: 30px;
-	position: inherit;
-	overflow-y: all;
-	overflow-x: auto;
+	margin-top: 60px;
+	margin-right: 5px;
+	padding: 10px;
+}
+
+#login-box .ml-auto{
+	margin-left: auto !important;
+}
+
+#login-box .mr-auto{
+	margin-right: auto !important;
+}
+
+#login-box{
+	vertical-align: middle;
 }
 
 .box{
@@ -119,7 +63,7 @@ a:hover{
 .box:last-child{
 	background-color: #6E2B94;	
 }
-
+/*
 #total-contents{
 	padding-left: 20px;
 	padding-right: 20px;
@@ -135,63 +79,7 @@ a:hover{
 .dropdown-container a{
 	font-size: 15px;
 }
-
-table.table-bordered > thead > tr > th{
-  border:1px solid black;
-}
-
-table.table-bordered{
-    border:1px solid black;
-    margin-top:20px;
-}
-
-  
-table.table-bordered > tbody > tr > td{
-    border:1px solid black;
-}
-
-table tr td button {
-	width: 200px;
-}
-
-/* Some media queries for responsiveness */
-@media screen and (max-width: 600px) {
-    header{
-    	font-size: 15px;
-    }
-
-    .title{
-    	font-size: 20px;
-    }
-
-    .sidenav {
-    	padding-top: 15px;
-    	margin-top: 75px;
-    	width: 50%;
-    	overflow-x: scroll;
-    	display: none;
-    }
-
-    .fig-caption{
-    	font-size: 15px;
-    }
-
-    .sidenav img{
-    	height: 70px;
-    	width: 70px;
-    }
-
-    .sidenav-tagline{
-    	display: none;
-    }
-
-    .sidenav a {
-    	font-size: 13px;
-    }
-
-    .description{
-    	margin-top: 40px;
-    	margin-left: 6px;
-    	padding: 15px;
-    }
+*/
+.table-responsive{
+	padding: 10px;
 }

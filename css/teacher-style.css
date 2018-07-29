@@ -1,4 +1,4 @@
-header{
+/*header{
 	color: #49111C;
 	background-color: #FFF;
 }
@@ -20,11 +20,23 @@ header{
 .sidenav a:hover, .dropdown-btn:hover{
 	color: #1A936F;
 }
-
-.table-responsive .table tbody th{
-	border: solid 1px black;
+*/
+.index-table .table tbody th, td{
+	border-right: solid 1px #9DA1A1;
 }
 
-.table-responsive .table tbody td:hover{	
-	background-color: #FC7A57;
+.index-table .table tbody th:first-child{
+	border-right: solid 1px #9DA1A1;
+}
+
+.index-table .table tbody th, td:last-child{
+	border-right: transparent;
+}
+
+.index-table .table tbody td:hover{	
+	background-color: #DD6D3C;
+}
+
+#view{
+	display: none;
 }

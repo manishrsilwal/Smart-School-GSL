@@ -1,0 +1,23 @@
+body{
+	background: url('../images/wp.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.shadow-index{
+	box-shadow: 0 0 10px 10px rgba(0,0,0,0.3);
+}
+
+.content-center{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+footer{
+	position: relative;
+	top: 90%;
+	overflow-y: hidden;
+}
