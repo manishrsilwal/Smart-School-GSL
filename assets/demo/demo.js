@@ -103,15 +103,16 @@ demo = {
       type: 'line',
 
       data: {
-        labels: ['Class 8','Class 9','Class 10'],
+        labels: ['Class 8 "A"', 'Class 8 "B"', 'Class 8 "C"', 'Class 9 "A"', 'Class 9 "B"', 'Class 9 "C"', 'Class 10"A"', 'Class 10"B"', 'Class 10"C"'],
         datasets: [{
             label:"Average marks",
             borderColor: "#6bd098",
-            backgroundColor: "",
             pointRadius: 5,
             pointHoverRadius: 8,
+            fill: false,
             borderWidth: 3,
-            data: [85, 50, 65]
+            data: [85, 50, 65, 75, 88, 68, 79, 91, 83],
+            lineTension: 0.1
           },
           // {
           //   borderColor: "#f17e5d",
@@ -153,7 +154,7 @@ demo = {
               drawBorder: true,
               zeroLineColor: "#ccc",
               color: '#BABABA',
-              display: false
+              display: true
             }
 
           }],
@@ -164,7 +165,7 @@ demo = {
               drawBorder: true,
               color: '#C6C6C6',
               zeroLineColor: "#ccc",
-              display: false,
+              display: true,
             },
             ticks: {
               padding: 20,
@@ -390,11 +391,11 @@ demo = {
   },
 
   showNotification: function(from, align) {
-    color = 'primary';
+    color = 'success';
 
     $.notify({
-      icon: "nc-icon nc-bell-55",
-      message: "Welcome to <b>Paper Dashboard</b> - a beautiful bootstrap dashboard for every web developer."
+      icon: "nc-icon nc-check-2",
+      message: "<strong>New homework has been assigned to the students.</strong>"
 
     }, {
       type: color,

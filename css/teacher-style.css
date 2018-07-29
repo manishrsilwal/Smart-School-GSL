@@ -1,26 +1,3 @@
-/*header{
-	color: #49111C;
-	background-color: #FFF;
-}
-
-.sidenav{
-	color: #FBF5F3;
-	background-color: #49111C;
-}
-
-.active{
-	background-color: #FC7A57;
-	border-left: 4px solid #FF0022;
-}
-
-.sidenav a, .dropdown-btn{
-	color: #FBF5F3;
-}
-
-.sidenav a:hover, .dropdown-btn:hover{
-	color: #1A936F;
-}
-*/
 .index-table .table tbody th, td{
 	border-right: solid 1px #9DA1A1;
 }
@@ -34,7 +11,7 @@
 }
 
 .index-table .table tbody td:hover{	
-	background-color: #DD6D3C;
+	/*background-color: #DD6D3C;*/
 }
 
 #view{

@@ -28,8 +28,7 @@
 				<div class="card shadow-index">
 					<div class="card-header text-center">
 						<h5 class="card-title">Welcome</h5>
-						<img src="images/logo.jpg" width="150" height="150" alt="SMART SCHOOL">
-						<figcaption class="caption">Kathmandu High School</figcaption>
+						<img src="images/logo.png" alt="SMART SCHOOL">
 					</div>
 					<div class="card-body">
 						<form>

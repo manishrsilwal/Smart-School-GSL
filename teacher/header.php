@@ -49,22 +49,26 @@
                                 <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="nc-icon nc-bell-55"></i>
                                     <p class="d-lg-none d-md-block">
-                                        Some Actions
+                                        Notifications
                                     </p>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
                                     <a class="dropdown-item" href="#">You have a meeting at 4 pm.</a>
+                                    <a class="dropdown-item" href="#">You have to assign today's homework by 5 pm.</a>
                                 </div>
                             </li>
 
-                            <!-- <li class="nav-item">
-                                <a class="nav-link" href="#pablo">
-                                    <i class="material-icons">dashboard</i>
+                            <li class="nav-item btn-rotate dropdown">
+                                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="nc-icon nc-settings-gear-65"></i>
                                     <p class="d-lg-none d-md-block">
-                                        Stats
+                                        Settings
                                     </p>
                                 </a>
-                            </li> -->
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Logout</a>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>

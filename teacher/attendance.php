@@ -7,12 +7,12 @@ include("header.php");
         Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
     -->
             <div class="logo">
-            	<a href="#" class="simple-text logo-mini">
+            	<a href="../teacher/" class="simple-text logo-mini">
 	            	<div class="logo-small-image">
 	            		<img src="../images/logo.jpg">
 	            	</div>
             	</a>
-                <a href="#" class="simple-text logo-normal">
+                <a href="../teacher/" class="simple-text logo-normal">
                     Smart School
                 </a>
             </div>
@@ -25,22 +25,17 @@ include("header.php");
                         </a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="../teac</div>her/attendance.php">
+                        <a class="nav-link" href="../teacher/attendance.php">
                             <i class="nc-icon nc-single-02"></i>
                             <p>Attendance</p>
                         </a>
                     </li>
-                    <li class="nav-item btn-rotate dropdown">
-                        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="nc-icon nc-tile-56"></i>
-                            Homeworks &nbsp;
-                        </a>
-
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item" href="#">Assign the Work</a>
-                                    <a class="dropdown-item" href="#">Check the Work</a>
-                                </div>
-                    </li>
+                    <li class="nav-item">
+					    <a class="nav-link" href="../teacher/homeworkentry.php">
+					        <i class="nc-icon nc-tile-56"></i>
+					        <p>Homework</p>
+					    </a>
+					</li>
                     <li class="nav-item btn-rotate dropdown">
                         <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="nc-icon nc-paper"></i>
@@ -62,7 +57,7 @@ include("header.php");
 					<div class="col-md-12">
 						<div class="card shadow">
 							<div class="col-lg-12 col-md-12 col-sm-12">
-								 <div class="card-header card-header-info">
+								 <div class="card-header">
 									<h4 class="card-title">Select the Class</h4>
 								</div>
 								<div class="card-body">
