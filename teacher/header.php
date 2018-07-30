@@ -55,7 +55,7 @@
 					<li class="nav-item <?php if(isset($exam)) echo('active'); ?>">
 						<a href="../teacher/marksentry.php" class="nav-link">
 							<i class="nc-icon nc-paper"></i>
-							<p>Exam Center</p>
+							<p>Exam Section</p>
 						</a>
 					</li>
                     
