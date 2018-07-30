@@ -1,99 +1,189 @@
-<?php
-	include("header.php");
-?>
+<?php $homework=1;$title="HomeWork";require('header.php'); ?>
+<div class="content">
+  <nav aria-label="breadcrumb" role="navigation">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="../parents/">Student Info</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Homework</li>
+      </ol>
+    </nav>
 
-<div class="row content">
-	<div class="col-sm-2 sidenav">
-		<center>
-			<div class="figure"><img src="../images/logo.jpg" class="img-circle" height="150" width="150"></div>
-			<div class="fig-caption">Kathmandu High School<br /><div class="sidenav-tagline">Quality Education for Leadership</div></div>
-		</center>
-		<a href="../parents"><i class="fas fa-home"></i>&nbsp;&nbsp;&nbsp;Home</a>
-		<a href="../parents/student-info.php"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;Student Info</a>
-		<a href="../parents/homework.php" class="active"><i class="fas fa-edit"></i>&nbsp;&nbsp;&nbsp;Homework</a>
-		<a href="../parents/results.php"><i class="fas fa-marker"></i>&nbsp;&nbsp;&nbsp;Results</a>
-		<a href="#"><i class="fas fa-money-bill-wave"></i>&nbsp;&nbsp;&nbsp;Fee Details</a>
-		
-		<a href="#"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;Messages</a>
-	</div>
+<div class="row">
+    <div class="col-md-5">
+    <div class="card shadow">
+              <div class="card-body">
+              <div class="card-title"><h4>Homework analysis for this month</h4></div>
+                    <div class="dropdown">
+                      <a class="dropdown-toggle" id="dropdownMenuButto" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <p class="title" style="display:inline;cursor:pointer;margin-right:5px;">Bhabin Khadka</p>
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButto">
+                        <a class="dropdown-item" href="#">Bhawana Khadka</a>
+                        <a class="dropdown-item" href="#">Bhuwan Khadka</a>
+                      </div>                  
+                    </div>
+                    <p class="description">
+                        @student1221
+                    </p>
+                    <br>
+                    <canvas id="homework"></canvas>
+                    <button class="btn btn-success float-right">See More Info</button>
+                    <br>
+              </div>
+            </div>
+    </div>
+    <div class="col-md-7">
+        <div class="card shadow">
+            <div class="container">
+            <br/>
+            <div class="card-title text-center"><h4>Homework details for last 3 days</h4></div>
 
-	<div class="col-sm-10 description">
-		<div class="page-header title">Homework Information <p class="home-tagline">List of homework by date</p></div>
-
-		<div class="row" id="total-contents">
-			<div class="col-md-2">
-				<label for="opt">Child's Name:</label>
-			</div>
-			<div class="col-md-2">
-				<select class="form-control" id="opt">
-					<option>Bhabin Neupane</option>
-					<option>Shailesh Neupane</option>
-					<option>Elina Neupane</option>
-					<option>Karuna Neupane</option>
-				</select>
-			</div>				
-		</div>
-		<br />
-
-		<div class="row" id="total-contents">
-			<div class="col-md-2">
-			<label for="date">Date:</label>
-			</div>
-			<div class="col-md-2">
-				<input type="date" class="form-control">
-			</div>
-		</div>
-		<br />
-		<div class="row" id="total-contents">
-			<div class="table-responsive">
-				<table class="table table-bordered table-hover">
-					<thead>
-						<tr>
-							<th class="col-md-1">S.N.</th>
-							<th class="col-md-3">Subject</th>
-							<th class="col-md-5">Homework</th>
-							<th class="col-md-3">Checking</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td class="col-md-1">1.</td>
-							<td class="col-md-3">Mathematics</td>
-							<td class="col-md-5">Exercise 2.5, Page Number 30</td>
-							<td class="col-md-3 danger">Not Submitted Yet</td>
-						</tr>
-						<tr>
-							<td class="col-md-1">2.</td>
-							<td class="col-md-3">Science</td>
-							<td class="col-md-5">Read Page 50</td>
-							<td class="col-md-3 success">Checked</td>
-						</tr>
-						<tr>
-							<td class="col-md-1">3.</td>
-							<td class="col-md-3">English</td>
-							<td class="col-md-5">No Homework</td>
-							<td class="col-md-3 Info">No need of Submission</td>
-						</tr>
-						<tr>
-							<td class="col-md-1">4.</td>
-							<td class="col-md-3">Nepali</td>
-							<td class="col-md-5">पेज १७ को हस्तलेखन</td>
-							<td class="col-md-3 success">Checked</td>
-						</tr>
-						<tr>
-							<td class="col-md-1">5.</td>
-							<td class="col-md-3">Computer Science</td>
-							<td class="col-md-5">No Homework</td>
-							<td class="col-md-3 Info">No need of Submission</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-
-		</div>
-	</div>
+                </br>
+                <div class="table-responsive"> 
+                    <table class="table text-center table-bordered"> 
+                    <thead style="color:#4267B2; border:1px solid #ddd;"> 
+                    <tr>
+                    <th> SN </th> 
+                    <th> Date </th> 
+                    <th> Subject </th> 
+                    <th> Homework </th> 
+                    <th> Status </th> 
+                    </tr>                                 
+                    </thead> 
+                    <tbody> 
+                    <tr> 
+                    <td> 1 </td> 
+                    <td> 28th July </td> 
+                    <td> Mathematics </td> 
+                    <td> Page 432 </td> 
+                    <td class="text-danger"> Not Done </td> 
+                    </tr> 
+                    <tr> 
+                    <td> 2 </td> 
+                    <td> 28th July </td> 
+                    <td> Science </td>
+                    <td> Page 234 </td> 
+                    <td class="text-success"> Checked </td> 
+                    </tr>
+                    
+                    <tr> 
+                    <td> 3 </td> 
+                    <td> 29th July </td> 
+                    <td> Mathematics </td> 
+                    <td> Page 432 </td> 
+                    <td class="text-danger"> Not Done </td> 
+                    </tr> 
+                    <tr> 
+                    <td> 4 </td> 
+                    <td> 29th July </td> 
+                    <td> Science </td>
+                    <td> Page 234 </td> 
+                    <td class="text-success"> Checked </td> 
+                    </tr>
+                    <tr> 
+                    <td> 5 </td> 
+                    <td> 29th July </td> 
+                    <td> Social </td> 
+                    <td> Page 43 </td> 
+                    <td class="text-danger"> Not Done </td> 
+                    </tr> 
+                    <tr> 
+                    <td> 6 </td> 
+                    <td> 29th July </td> 
+                    <td> Health </td>
+                    <td> Page 24 </td> 
+                    <td class="text-success"> Checked </td> 
+                    </tr>
+                    <tr> 
+                    <td> 7 </td> 
+                    <td> 30th July </td> 
+                    <td> Nepali </td> 
+                    <td> Page 432 </td> 
+                    <td class="text-info"> Not Yet Checked </td> 
+                    </tr> 
+                    <tr> 
+                    <td> 8 </td> 
+                    <td> 30th July </td> 
+                    <td> English </td>
+                    <td> Page 234 </td> 
+                    <td class="text-info"> Not Yet Checked </td> 
+                    </tr>
+                    </table> 
+                </div>
+            </div>            
+        </div>
+    </div>
 </div>
 
-<?php
-	include("footer.php");
-?>
+
+
+
+
+
+
+
+</div>
+      
+
+
+
+<?php require('footer.php'); ?>
+
+<script>
+initHomChart();
+    function initHomChart(){
+        ctx1 = document.getElementById('homework').getContext("2d");
+        myChart2 = new Chart(ctx1, {
+          type: 'line',
+          data: {
+            labels: ['Science','Math','Social','Health','English','Computer','Nepali'],
+            datasets: [{
+                label:"Homework Missed this Month",
+                borderColor: "rgb(255, 99, 132)",
+                backgroundColor: "rgba(255, 99, 132, 0.2)",
+                borderWidth: 2,
+                fill: false,
+                data: [6,3,1,5,8,2,4]}]},
+          options: {
+            legend: {
+              display: false
+            },
+
+            tooltips: {
+              enabled: true
+            },
+            scales: {
+              yAxes: [{
+
+                ticks: {
+                  fontColor: "#9f9f9f",
+                  beginAtZero: true,
+                  maxTicksLimit: 7,
+                },
+                gridLines: {
+                  drawBorder: true,
+                  zeroLineColor: "#ccc",
+                  color: '#BABABA',
+                  display: false,
+                }
+
+              }],
+
+              xAxes: [{
+                barPercentage: 2,
+                gridLines: {
+                  drawBorder: true,
+                  color: '#C6C6C6',
+                  zeroLineColor: "#ccc",
+                  display: false,
+                },
+                ticks: {
+                  padding: 20,
+                  fontColor: "#9f9f9f",
+                  beginAtZero: true
+                }
+              }]
+            },
+          }
+        });
+    }
+</script>

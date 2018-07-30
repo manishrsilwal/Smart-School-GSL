@@ -27,7 +27,7 @@
 			<div class="col-md-3 col-sm-12 ml-auto mr-auto content-center">
 				<div class="card shadow-index">
 					<div class="card-header text-center">
-						<h5 class="card-title">Welcome</h5>
+						<h5 class="card-title">Welcome to</h5>
 						<img src="images/logo.png" alt="SMART SCHOOL">
 					</div>
 					<div class="card-body">
@@ -60,7 +60,7 @@
 	            <nav class="footer-nav">
 	              <ul>
 	                <li>
-	                  <a href="#">Smart School</a>
+	                  <a href="">Smart School</a>
 	                </li>
 	              </ul>
 	            </nav>

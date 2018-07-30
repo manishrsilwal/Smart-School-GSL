@@ -1,63 +1,18 @@
 <?php
-	include("header.php");
+	$exam=1;$title="Exam Section";require("header.php");
 ?>
-
-<div class="sidebar" data-color="white" data-active-color="danger">
-      <!--
-        Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
-    -->
-            <div class="logo">
-                <a href="../teacher/" class="simple-text logo-mini">
-	            	<div class="logo-small-image">
-	            		<img src="../images/logo.jpg">
-	            	</div>
-            	</a>
-                <a href="../teacher/" class="simple-text logo-normal">
-                    Smart School
-                </a>
-            </div>
-            <div class="sidebar-wrapper">
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../teacher">
-                            <i class="nc-icon nc-layout-11"></i>
-                            <p>Dashboard</p>
-                        </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="../teacher/attendance.php">
-                            <i class="nc-icon nc-single-02"></i>
-                            <p>Attendance</p>
-                        </a>
-                    </li>
-                    <li class="nav-item ">
-					    <a class="nav-link" href="../teacher/homeworkentry.php">
-					        <i class="nc-icon nc-tile-56"></i>
-					        <p>Homework</p>
-					    </a>
-					</li>
-                    <li class="nav-item btn-rotate dropdown">
-                        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="nc-icon nc-paper"></i>
-                            Exam Section &nbsp;
-                        </a>
-
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item active" href="../teacher/marksentry.php">Enter the Marks</a>
-                                    <a class="dropdown-item" href="#">View the Marksheet</a>
-                                </div>
-                    </li>
-                </ul>
-            </div>
-</div>
-
 
 <div class="content">
 	<div class="container-fluid">
+		<nav aria-label="breadcrumb" role="navigation">
+		  <ol class="breadcrumb">
+		    <li class="breadcrumb-item"><a href="../teacher/">Dashboard</a></li>
+		    <li class="breadcrumb-item active" aria-current="page">Exam Section</li>
+		  </ol>
+		</nav>
 		<div class="row">
 			<div class="col-md-12">
 			<div class="card shadow">
-				<div class="col-lg-12 col-md-12 col-sm-12">
 					<div class="card-header card-header-info">
 						<h4 class="card-title">Marks Entry</h4>
 					</div>
@@ -90,29 +45,38 @@
 								<input type="text" class="form-control" placeholder="Mathematics" disabled>
 							</div>
 							<div class="row">
-								<div class="form-group col-md-6">
-									<label>Marks of</label>
+								<div class="form-group col-md-12">
+									<label>Marks of <font color="red">*</font></label>
 									<select id="inputState" class="form-control">
-										        <option selected>Choose...</option>
-										        <option disabled>1<sup>st</sup> Monthly Test</option>
-										        <option disabled>2<sup>nd</sup> Monthly Test</option>
-										        <option disabled>3<sup>rd</sup> Monthly Test</option>
-										        <option>1<sup>st</sup> Terminal Examination</option>
-										        <option disabled>2<sup>nd</sup> Terminal Examination</option>
-										        <option disabled>3<sup>rd</sup> Terminal Examination</option>
-									      	</select>
+								        <option selected>Choose...</option>
+								        <option disabled>1<sup>st</sup> Monthly Test</option>
+								        <option disabled>2<sup>nd</sup> Monthly Test</option>
+								        <option disabled>3<sup>rd</sup> Monthly Test</option>
+								        <option>1<sup>st</sup> Terminal Examination</option>
+								        <option disabled>2<sup>nd</sup> Terminal Examination</option>
+								        <option disabled>3<sup>rd</sup> Terminal Examination</option>
+							      	</select>
 								</div>
+							</div>
 									
-								<div class="form-group col-md-6">
+								<div class="form-group">
 								<label for="Full-marks">Full Marks <font color="red">*</font></label>
-								<input type="text" class="form-control" id="Full-marks" required placeholder="Enter full marks">
+								<div class="row">
+									<div class="col-md-6">
+										<input type="text" class="form-control col-md-12" id="Full-marks" required placeholder="Enter theoritical full marks">
+									</div>
+									<div class="col-md-6">
+										<input type="text" class="form-control col-md-12" id="Full-marks" required placeholder="Enter practical full marks">
+									</div>
 								</div>
-							</div>
+								</div>
 							</form>
+							<button class="btn btn-success" onclick="$('#view').slideToggle();">Submit</button>
 							</div>
-							<div class="card-footer text-center">
+							<div class="card-footer">
 								<hr />
-								<button class="btn btn-success" onclick="$('#view').slideToggle();">Submit</button>
+								<font color="red">*</font> Required
+
 							</div>
 						</div>
 					</div>
@@ -132,7 +96,8 @@
 										<tr>
 											<th class="text-info">Roll Number</th>
 											<th class="text-info">Name</th>
-											<th class="text-info">Marks</th>
+											<th class="text-info">Theoritical Marks</th>
+											<th class="text-info">Practical Marks</th>
 										</tr>
 									</thead>
 									<tbody>
@@ -140,25 +105,30 @@
 											<td>1.</td>
 											<td><img src="../images/profile/kawish.png" class="img-circle img-thumbnail" width="50" height="50"> Kawish Bhakta Shrestha</td>
 											<td><input type="text" class="form-control col-md-2"></td>
+											<td><input type="text" class="form-control col-md-2"></td>
 										</tr>
 										<tr>
 											<td>2.</td>
 											<td><img src="../images/profile/rashika.png" class="img-circle img-thumbnail" width="50" height="50"> Rashika Karki</td>
+											<td><input type="text" class="form-control col-md-2"></td>
 											<td><input type="text" class="form-control col-md-2"></td>
 										</tr>
 										<tr>
 											<td>3.</td>
 											<td><img src="../images/profile/samayee.jpg" class="img-circle img-thumbnail" width="50" height="50"> Samayee Dhungel</td>
 											<td><input type="text" class="form-control col-md-2"></td>
+											<td><input type="text" class="form-control col-md-2"></td>
 										</tr>
 										<tr>
 											<td>4.</td>
 											<td><img src="../images/profile/kiran.png" class="img-circle img-thumbnail" width="50" height="50"> Kiran Neupane</td>
 											<td><input type="text" class="form-control col-md-2"></td>
+											<td><input type="text" class="form-control col-md-2"></td>
 										</tr>
 										<tr>
 											<td>5.</td>
 											<td><img src="../images/profile/bhabin.jpg" class="img-circle img-thumbnail" width="50" height="50"> Bhabin Khadka</td>
+											<td><input type="text" class="form-control col-md-2"></td>
 											<td><input type="text" class="form-control col-md-2"></td>
 										</tr>
 									</tbody>
@@ -177,5 +147,5 @@
 
 
 <?php
-	include("footer.php");
+	require("footer.php");
 ?>

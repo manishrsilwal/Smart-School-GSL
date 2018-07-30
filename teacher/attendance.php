@@ -1,62 +1,19 @@
 <?php
-include("header.php");
+$attendance=1;$title="Attendance Section";require("header.php");
 ?>
 
-<div class="sidebar" data-color="white" data-active-color="danger">
-      <!--
-        Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
-    -->
-            <div class="logo">
-            	<a href="../teacher/" class="simple-text logo-mini">
-	            	<div class="logo-small-image">
-	            		<img src="../images/logo.jpg">
-	            	</div>
-            	</a>
-                <a href="../teacher/" class="simple-text logo-normal">
-                    Smart School
-                </a>
-            </div>
-            <div class="sidebar-wrapper">
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../teacher">
-                            <i class="nc-icon nc-layout-11"></i>
-                            <p>Dashboard</p>
-                        </a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="../teacher/attendance.php">
-                            <i class="nc-icon nc-single-02"></i>
-                            <p>Attendance</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-					    <a class="nav-link" href="../teacher/homeworkentry.php">
-					        <i class="nc-icon nc-tile-56"></i>
-					        <p>Homework</p>
-					    </a>
-					</li>
-                    <li class="nav-item btn-rotate dropdown">
-                        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="nc-icon nc-paper"></i>
-                            Exam Section &nbsp;
-                        </a>
-
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item" href="../teacher/marksentry.php">Enter the Marks</a>
-                                    <a class="dropdown-item" href="#">View the Marksheet</a>
-                                </div>
-                    </li>
-                </ul>
-            </div>
-</div>
 
 <div class="content">
 		<div class="container-fluid">
+			<nav aria-label="breadcrumb" role="navigation">
+		  <ol class="breadcrumb">
+		    <li class="breadcrumb-item"><a href="../teacher/">Dashboard</a></li>
+		    <li class="breadcrumb-item active" aria-current="page">Attendance</li>
+		  </ol>
+		</nav>
 				<div class="row">
 					<div class="col-md-12">
 						<div class="card shadow">
-							<div class="col-lg-12 col-md-12 col-sm-12">
 								 <div class="card-header">
 									<h4 class="card-title">Select the Class</h4>
 								</div>
@@ -93,13 +50,13 @@ include("header.php");
 											<input type="text" class="form-control" placeholder="Mathematics" disabled>
 										</div>
 									</form>
-								</div>
-
-								<div class="card-footer text-center">
-									<hr />
 									<button class="btn btn-success" onclick="$('#view').slideToggle();">Submit</button>
 								</div>
-							</div>
+
+								<div class="card-footer">
+									<hr />
+								<font color="red">*</font> Required
+								</div>
 						</div>
 					</div>
 				</div>
@@ -107,7 +64,7 @@ include("header.php");
 				<div id="view">
 						<div class="row">
 							<div class="col-md-12">
-				              <div class="card">
+				              <div class="card shadow">
 				                <div class="card-header card-header-danger">
 				                  <h5 class="card-title">Attendance of 10 'A'</h5>
 				                </div>
@@ -228,7 +185,7 @@ include("header.php");
 
 
 <?php
-include("footer.php");
+require("footer.php");
 ?>
 
 <script>

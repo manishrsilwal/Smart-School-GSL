@@ -1,32 +1,74 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<!-- Meta tags -->
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<title>Smart School</title>
-	<!-- <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
-	<!-- <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> -->
-	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"> -->
+	<meta charset="utf-8" />
+	<link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+	<link rel="icon" type="image/png" href="../assets/img/favicon.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>
+	<?php if(isset($title)) echo($title.' - Smart School'); else echo "Smart School"; ?>
+	</title>
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
 	<link href="../fontawesome/css/all.css" rel="stylesheet">
-
-    <!--     Fonts and icons     -->
+	<link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="../assets/css/paper-dashboard.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
-    <!-- Material Dashboard CSS -->
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/css/paper-dashboard.min.css">
-
-	<link rel="stylesheet" type="text/css" href="../css/teacher-style.css">
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../css/teacher-style.css">
+	<link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
-	<div class="wrapper ">
 
-        <div class="main-panel">
-            <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top">
+
+<body class="">
+  <div class="wrapper ">
+    <div class="sidebar" data-color="white" data-active-color="danger">
+            <div class="logo">
+                <a href="../teacher/" class="simple-text logo-mini">
+	            	<div class="logo-image-small">
+	            		<img src="../images/logo.jpg">
+	            	</div>
+            	</a>
+                <a href="../teacher/" class="simple-text logo-normal">
+                    Smart School
+                </a>
+            </div>
+            <div class="sidebar-wrapper">
+                <ul class="nav">
+                    <li class="nav-item <?php if(isset($home)) echo('active'); ?>">
+                        <a class="nav-link" href="../teacher">
+                            <i class="nc-icon nc-layout-11"></i>
+                            <p>Dashboard</p>
+                        </a>
+                    </li>
+                    <li class="nav-item <?php if(isset($attendance)) echo('active'); ?>">
+                        <a class="nav-link" href="../teacher/attendance.php">
+                            <i class="nc-icon nc-single-02"></i>
+                            <p>Attendance</p>
+                        </a>
+                    </li>
+                    <li class="nav-item <?php if(isset($homework)) echo('active'); ?>">
+					    <a class="nav-link" href="../teacher/homeworkentry.php">
+					        <i class="nc-icon nc-tile-56"></i>
+					        <p>Homework</p>
+					    </a>
+					</li>
+					<li class="nav-item <?php if(isset($exam)) echo('active'); ?>">
+						<a href="../teacher/marksentry.php" class="nav-link">
+							<i class="nc-icon nc-paper"></i>
+							<p>Exam Center</p>
+						</a>
+					</li>
+                    
+                    <li class="active-pro">
+		              	<img src="../images/logo.png">
+		          	</li>
+                </ul>
+            </div>
+</div>
+ 
+    <div class="main-panel">
+      <!-- Navbar -->
+       <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top">
                 <div class="container-fluid">
                     <div class="navbar-wrapper">
                     <div class="navbar-toggle">
@@ -73,5 +115,3 @@
                     </div>
                 </div>
             </nav>
-            <!-- Nav Bar Ending ............... -->
-       

@@ -1,292 +1,590 @@
-<?php
-	include("header.php")
-?>
+<?php $result=1;$title="Results";require('header.php'); ?>
+<style>
+  table td{
+      border:1px solid #aaa !important;
+  }
+  .stripTH th{
+    border:1px solid #aaa !important;
+  }
+</style>
+    
+<div class="content">
+    <nav aria-label="breadcrumb" role="navigation">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="../parents/">Student Info</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Results</li>
+      </ol>
+    </nav>
 
-<div class="row content">
-	<div class="col-sm-2 sidenav">
-		<center>
-			<div class="figure"><img src="../images/logo.jpg" class="img-circle" height="150" width="150"></div>
-			<div class="fig-caption">Kathmandu High School<br /><div class="sidenav-tagline">Quality Education for Leadership</div></div>
-		</center>
-		<a href="../parents"><i class="fas fa-home"></i>&nbsp;&nbsp;&nbsp;Home</a>
-		<a href="../parents/student-info.php"><i class="fas fa-user"></i>&nbsp;&nbsp;&nbsp;Student Info</a>
-		<a href="../parents/homework.php"><i class="fas fa-edit"></i>&nbsp;&nbsp;&nbsp;Homework</a>
-		<a href="../parents/results.php" class="active"><i class="fas fa-marker"></i>&nbsp;&nbsp;&nbsp;Results</a>
-		<a href="#"><i class="fas fa-money-bill-wave"></i>&nbsp;&nbsp;&nbsp;Fee Details</a>
-		
-		<a href="#"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;Messages</a>
-	</div>
+<div class="row">
+    <div class="col-md-4">
+        <div class="card shadow">
+        <br/>
+            <div class="container">
+                <br/>
+                <div class="card-user">
+                        
+                            <div class="author">
+                            <img style="margin-top:20px;"class="avatar border-gray" src="../assets/img/mike.jpg" alt="...">
+                            
+                        </div>
+                        </div>
+                    <div class="dropdown">                    
 
-	<div class="col-sm-10 description">
-		<div class="page-header title">Results of Examination <p class="home-tagline">Results of the test</p></div>
+                        <a class="dropdown-toggle" id="dropdownMenuButto" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <h5 class="title" style="display:inline-block;cursor:pointer;margin-right:5px;">Bhabin Khadka</h5>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButto">
+                        <a class="dropdown-item" href="#">Bhawana Khadka</a>
+                        <a class="dropdown-item" href="#">Bhuwan Khadka</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <h6 style="display:inline;">Year: &nbsp;</h6>
+                        <a class="dropdown-toggle" id="dropdownMenuButto" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <h6 class="title" style="display:inline-block;cursor:pointer;margin-right:5px;">2018</h6>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButto">
+                        <a class="dropdown-item" href="#">2017</a>
+                        <a class="dropdown-item" href="#">2016</a>
+                        </div>
+                    </div>
+                    <h6>Class: 9</h6>
+                    <h6>Section: B</h6>
+                    <br/>
+                    <ul class="nav nav-pills nav-pills-primary flex-column">
+                    <li class="nav-item"><a class="nav-link active" href="#tab1" data-toggle="tab">First Terminal Examination</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tab2" data-toggle="tab">Second Terminal Examination</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tab3" data-toggle="tab">Third Terminal Examination</a></li>
+                    </ul>
+                <br/>
+            </div>
+        </div>
 
-		<div class="panel-group" id="accordion">
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<div class="panel-title">
-						<div class="row">
-							<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-							<div class="col-sm-6 menu">
-								<i class="fas fa-marker"></i>&nbsp;&nbsp;&nbsp;First Terminal Examination
-							</div>
-							<div class="col-sm-6" align="right">
-								<i class="fas fa-chevron-circle-down fa-2x"></i>
-							</div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div id="collapse1" class="panel-collapse collapse">
-						<div class="panel panel-default">
-							<div class="panel-heading text-center"><p class="title">Kathmandu High School</p><p class="home-tagline">First Terminal Examination (Baishakh-Ashadh)</p></div>
-							<div class="panel-body">
-								<div class="row" id="total-contents">
-									<div class="col-md-2">
-										<label for="opt">Child's Name:</label>
-									</div>
-									<div class="col-md-2">
-										<select class="form-control" id="opt">
-											<option>Bhabin Neupane</option>
-											<option>Shailesh Neupane</option>
-											<option>Elina Neupane</option>
-											<option>Karuna Neupane</option>
-										</select>
-									</div>				
-								</div>
-								<br />
-								<div class="row" id="total-contents">
-									<div class="col-md-2">
-										<p><label>Class:</label> 9</p>
-										<p><label>Roll Number:</label> 16</p>
-										<p><label>Section:</label> B</p>
-									</div>
-								</div>
+        <div class="card shadow">
+    &nbsp;
+        <h5 class="text-center" style="font-size:20px;">Grade Calculation Details</h5>
+        <div class="container-fluid">
+        <div class="table-responsive"> 
+            <table class="table text-center table-bordered"> 
+                <thead>
+                <tr class="strip" style="color:#4267B2; border:1px solid #ddd;">
+                    <th>Marks Interval</th>
+                    <th>Grade</th>
+                    <th>Grade Point</th>
+                    <th>Remarks</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>90-100</td>
+                        <td>A+</td>
+                        <td>4</td>
+                        <td>Outstanding</td>
+                    </tr>
+                    <tr>
+                        <td>80-89.99</td>
+                        <td>A</td>
+                        <td>3.6</td>
+                        <td>Excellent</td>
+                    </tr>
+                    <tr>
+                        <td>70-79.99</td>
+                        <td>B+</td>
+                        <td>3.2</td>
+                        <td>Very Good</td>
+                    </tr>
+                    <tr>
+                        <td>60-69.99</td>
+                        <td>B</td>
+                        <td>2.8</td>
+                        <td>Good</td>
+                    </tr>
+                    <tr>
+                        <td>50-59.99</td>
+                        <td>C+</td>
+                        <td>2.4</td>
+                        <td>Satisfactory</td>
+                    </tr>
+                    <tr>
+                        <td>40-49.99</td>
+                        <td>C</td>
+                        <td>2</td>
+                        <td>Acceptable</td>
+                    </tr>
+                    <tr>
+                        <td>30-39.99</td>
+                        <td>D+</td>
+                        <td>1.6</td>
+                        <td>Not Good</td>
+                    </tr>
+                    <tr>
+                        <td>20-29.99</td>
+                        <td>D</td>
+                        <td>1.2</td>
+                        <td>Insufficient</td>
+                    </tr>
+                    <tr>
+                        <td>0-19.99</td>
+                        <td>E</td>
+                        <td>0.8</td>
+                        <td>Very Bad</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
+</div>
+    
+    </div>
+    <div class="col-md-8">
+        <div class="tab-content">
+            <div class="tab-pane active" id="tab1">
+                <div class="card shadow">
+                <div class="container-fluid">
+                <br/>
+                <h6 class="text-center" style="font-size:30px;">Kathmandu High School</h6>
+                <h5 class="text-center" style="font-size:20px;">First Terminal Examinationinal Examination</h5>
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>Name : Bhabin Khadka</p>
+                        <p>Class : 9</p>
+                        <p>Section : B</p>
+                    </div>  
+                </div>
 
-								<div class="row" id="total-contents">
-									<div class="table-responsive">
-										<table class="table table-bordered table-hover">
-											<thead>
-												<tr>
-													<th class="col-md-1">S.N.</th>
-													<th class="col-md-3">Subject</th>
-													<th class="col-md-1">Full Marks</th>
-													<th class="col-md-1">Highest Marks</th>
-													<th class="col-md-1">Obtained Marks</th>
-													<th class="col-md-1">Remarks</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td class="col-md-1">1.</td>
-													<td class="col-md-3">Mathematics</td>
-													<td class="col-md-1">100</td>
-													<td class="col-md-1">99</td>
-													<td class="col-md-1">80</td>
-													<td class = "col-md-1"></td>
-												</tr>
-												<tr>
-													<td class="col-md-1">2.</td>
-													<td class="col-md-3">Science</td>
-													<td class="col-md-1">100</td>
-													<td class="col-md-1">95</td>
-													<td class="col-md-1">70</td>
-													<td class = "col-md-1"></td>
-												</tr>
-												<tr>
-													<td class="col-md-1">3.</td>
-													<td class="col-md-3">English</td>
-													<td class="col-md-1">100</td>
-													<td class="col-md-1">90</td>
-													<td class="col-md-1">84</td>
-													<td class = "col-md-1"></td>
-												</tr>
-												<tr>
-													<td class="col-md-1">4.</td>
-													<td class="col-md-3">Nepali</td>
-													<td class="col-md-1">100</td>
-													<td class="col-md-1">93</td>
-													<td class="col-md-1">79</td>
-													<td class = "col-md-1"></td>
-												</tr>
-												<tr>
-													<td class="col-md-1">5.</td>
-													<td class="col-md-3">Computer Science</td>
-													<td class="col-md-1">100</td>
-													<td class="col-md-1">99</td>
-													<td class="col-md-1">91</td>
-													<td class = "col-md-1"></td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
+                <br/>
+                    <div class="table-responsive"> 
+                        <table class="table text-center "> 
+                        <thead> 
+                        <tr class="stripTH" style="color:#4267B2; border:1px solid #ddd;">
+                        <th rowspan="2">S.N</th> 
+                        <th rowspan="2">Subject</th> 
+                        <th colspan="2">Full Marks</th> 
+                        <th colspan="2">Pass Marks</th> 
+                        <th colspan="3">Obtained Marks</th> 
+                        <th rowspan="2">Credit Hour</th> 
+                        <th colspan="2">Grades</th>
+                        <th rowspan="2">Final Grade</th> 
+                        <th rowspan="2">Grade Point</th> 
+                        </tr>
+                        <tr class="stripTH" style="color:#4267B2;" >
+                            <th>TH</th>
+                            <th>PR</th>
+                            <th>TH</th>
+                            <th>PR</th>
+                            <th>TH</th>
+                            <th>PR</th>
+                            <th>Total</th>
+                            <th>TH</th>
+                            <th>PR</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1.</td>
+                                <td>Math</td>
+                                <td>75</td>
+                                <td>25</td>
+                                <td>25</td>
+                                <td>10</td>
+                                <td>50</td>
+                                <td>20</td>
+                                <td>70</td>
+                                <td>4</td>
+                                <td>A</td>
+                                <td>A+</td>
+                                <td>A</td>
+                                <td>3.55</td>
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td>Social</td>
+                                <td>75</td>
+                                <td>25</td>
+                                <td>25</td>
+                                <td>10</td>
+                                <td>50</td>
+                                <td>20</td>
+                                <td>70</td>
+                                <td>4</td>
+                                <td>A</td>
+                                <td>A+</td>
+                                <td>A</td>
+                                <td>3.55</td>
+                            </tr>
+                            <tr>
+                                <td>3.</td>
+                                <td>Science</td>
+                                <td>75</td>
+                                <td>25</td>
+                                <td>25</td>
+                                <td>10</td>
+                                <td>50</td>
+                                <td>20</td>
+                                <td>70</td>
+                                <td>4</td>
+                                <td>A</td>
+                                <td>A+</td>
+                                <td>A</td>
+                                <td>3.55</td>
+                            </tr>
+                            <tr>
+                                <td>4.</td>
+                                <td>Health</td>
+                                <td>75</td>
+                                <td>25</td>
+                                <td>25</td>
+                                <td>10</td>
+                                <td>50</td>
+                                <td>20</td>
+                                <td>70</td>
+                                <td>4</td>
+                                <td>A</td>
+                                <td>A+</td>
+                                <td>A</td>
+                                <td>3.55</td>
+                            </tr>
+                            <tr>
+                                <td>5.</td>
+                                <td>English </td>
+                                <td>75</td>
+                                <td>25</td>
+                                <td>25</td>
+                                <td>10</td>
+                                <td>50</td>
+                                <td>20</td>
+                                <td>70</td>
+                                <td>4</td>
+                                <td>A</td>
+                                <td>A+</td>
+                                <td>A</td>
+                                <td>3.55</td>
+                            </tr>
+                        </tbody>
+                        
+                        </table> 
 
-									<div class="row">
-										<div class="col-md-4">
-											<label>Total:</label> 500
-										</div>
-										<div class="col-md-4">
-											<label>Obtained Marks:</label> 404
-										</div>
-										<div class="col-md-4">
-											<label>Percentage:</label> 80.8%
-										</div>
-									</div>
-									<br />
-									<div class="row">
-										<div class="panel panel-default">
-											<div class="panel-heading">Remarks</div>
-											<div class="panel-body">
-												Good Performance, but can do well in future.
-											</div>
-										</div>
-									</div>
-									<br />
-									<div class="row">
-										<center><a href="#" class="btn btn-success" type="button">Download the result</a></center>
-									</div>
+                        <div class="card-header">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card-title"><h5>Grade Point Average</h5></div>
+                                    <p>Grade : A</p>
+                                    <p>GPA : 3.55</p>
+                                    <p>Percentage : 81%</p>
+                                    <p>Remarks : Excellent</p>                            
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-title"><h5>Legend</h5></div>
+                                <p>TH : Theoritical Marks</p>
+                                <p>PR : Practical Marks</p>
+                            </div>
+                        </div>
+                        </div>
+                            
+                    </div>
+                </div>
+                </div>
 
-								</div>
-							</div>
-						</div>
-				</div>
-			</div>
+            </div>
+            <div class="tab-pane" id="tab2">
+            <div class="card shadow">
+                <div class="container-fluid">
+                <br/>
+                <h6 class="text-center" style="font-size:30px;">Kathmandu High School</h6>
+                <h5 class="text-center" style="font-size:20px;">Second Terminal Examinationinal Examination</h5>
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>Name : Bhabin Khadka</p>
+                    <p>Class : 9</p>
+                        <p>Section : B</p>
+                    </div>
+                </div>
+
+                <br/>
+                    <div class="table-responsive"> 
+                        <table class="table text-center table-bordered"> 
+                        <thead> 
+                        <tr class="stripTH" style="color:#4267B2; border:1px solid #ddd;">
+                        <th rowspan="2">S.N</th> 
+                        <th rowspan="2">Subject</th> 
+                        <th colspan="2">Full Marks</th> 
+                        <th colspan="2">Pass Marks</th> 
+                        <th colspan="3">Obtained Marks</th> 
+                        <th rowspan="2">Credit Hour</th> 
+                        <th colspan="2">Grades</th>
+                        <th rowspan="2">Final Grade</th> 
+                        <th rowspan="2">Grade Point</th> 
+                        </tr>
+                        <tr class="stripTH" style="color:#4267B2;" >
+                            <th>TH</th>
+                            <th>PR</th>
+                            <th>TH</th>
+                            <th>PR</th>
+                            <th>TH</th>
+                            <th>PR</th>
+                            <th>Total</th>
+                            <th>TH</th>
+                            <th>PR</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1.</td>
+                                <td>Math</td>
+                                <td>75</td>
+                                <td>25</td>
+                                <td>25</td>
+                                <td>10</td>
+                                <td>50</td>
+                                <td>20</td>
+                                <td>70</td>
+                                <td>4</td>
+                                <td>A</td>
+                                <td>A+</td>
+                                <td>A</td>
+                                <td>3.55</td>
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td>Social</td>
+                                <td>75</td>
+                                <td>25</td>
+                                <td>25</td>
+                                <td>10</td>
+                                <td>45</td>
+                                <td>25</td>
+                                <td>70</td>
+                                <td>4</td>
+                                <td>A</td>
+                                <td>A+</td>
+                                <td>A</td>
+                                <td>3.55</td>
+                            </tr>
+                            <tr>
+                                <td>3.</td>
+                                <td>Science</td>
+                                <td>75</td>
+                                <td>25</td>
+                                <td>25</td>
+                                <td>10</td>
+                                <td>60</td>
+                                <td>10</td>
+                                <td>70</td>
+                                <td>4</td>
+                                <td>A</td>
+                                <td>A+</td>
+                                <td>A</td>
+                                <td>3.55</td>
+                            </tr>
+                            <tr>
+                                <td>4.</td>
+                                <td>Health</td>
+                                <td>75</td>
+                                <td>25</td>
+                                <td>25</td>
+                                <td>10</td>
+                                <td>50</td>
+                                <td>20</td>
+                                <td>70</td>
+                                <td>4</td>
+                                <td>A</td>
+                                <td>A+</td>
+                                <td>A</td>
+                                <td>3.55</td>
+                            </tr>
+                            <tr>
+                                <td>5.</td>
+                                <td>English </td>
+                                <td>75</td>
+                                <td>25</td>
+                                <td>25</td>
+                                <td>10</td>
+                                <td>50</td>
+                                <td>20</td>
+                                <td>70</td>
+                                <td>4</td>
+                                <td>A</td>
+                                <td>A+</td>
+                                <td>A</td>
+                                <td>3.55</td>
+                            </tr>
+                        </tbody>
+                        
+                        </table>
+                        <div class="card-header">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card-title"><h5>Grade Point Average</h5></div>
+                                    <p>Grade : A</p>
+                                    <p>GPA : 3.55</p>
+                                    <p>Percentage : 81%</p>
+                                    <p>Remarks : Excellent</p>                            
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-title"><h5>Legend</h5></div>
+                                <p>TH : Theoritical Marks</p>
+                                <p>PR : Practical Marks</p>
+                            </div>
+                        </div>
+                        </div> 
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="tab3">
+            <div class="card shadow">
+                <div class="container-fluid">
+                <br/>
+                <h6 class="text-center" style="font-size:30px;">Kathmandu High School</h6>
+                <h5 class="text-center" style="font-size:20px;">Third Terminal Examinationinal Examination</h5>
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>Name : Bhabin Khadka</p>
+                    <p>Class : 9</p>
+                        <p>Section : B</p>
+                    </div>
+                </div>
+
+                <br/>
+                    <div class="table-responsive"> 
+                        <table class="table text-center table-bordered"> 
+                        <thead> 
+                        <tr class="stripTH" style="color:#4267B2; border:1px solid #ddd;">
+                        <th rowspan="2">S.N</th> 
+                        <th rowspan="2">Subject</th> 
+                        <th colspan="2">Full Marks</th> 
+                        <th colspan="2">Pass Marks</th> 
+                        <th colspan="3">Obtained Marks</th> 
+                        <th rowspan="2">Credit Hour</th> 
+                        <th colspan="2">Grades</th>
+                        <th rowspan="2">Final Grade</th> 
+                        <th rowspan="2">Grade Point</th> 
+                        </tr>
+                        <tr class="stripTH" style="color:#4267B2;" >
+                            <th>TH</th>
+                            <th>PR</th>
+                            <th>TH</th>
+                            <th>PR</th>
+                            <th>TH</th>
+                            <th>PR</th>
+                            <th>Total</th>
+                            <th>TH</th>
+                            <th>PR</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1.</td>
+                                <td>Math</td>
+                                <td>75</td>
+                                <td>25</td>
+                                <td>25</td>
+                                <td>10</td>
+                                <td>50</td>
+                                <td>20</td>
+                                <td>70</td>
+                                <td>4</td>
+                                <td>A</td>
+                                <td>A+</td>
+                                <td>A</td>
+                                <td>3.55</td>
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td>Social</td>
+                                <td>75</td>
+                                <td>25</td>
+                                <td>25</td>
+                                <td>10</td>
+                                <td>50</td>
+                                <td>20</td>
+                                <td>70</td>
+                                <td>4</td>
+                                <td>A</td>
+                                <td>A+</td>
+                                <td>A</td>
+                                <td>3.55</td>
+                            </tr>
+                            <tr>
+                                <td>3.</td>
+                                <td>Science</td>
+                                <td>75</td>
+                                <td>25</td>
+                                <td>25</td>
+                                <td>10</td>
+                                <td>50</td>
+                                <td>20</td>
+                                <td>70</td>
+                                <td>4</td>
+                                <td>A</td>
+                                <td>A+</td>
+                                <td>A</td>
+                                <td>3.55</td>
+                            </tr>
+                            <tr>
+                                <td>4.</td>
+                                <td>Health</td>
+                                <td>75</td>
+                                <td>25</td>
+                                <td>25</td>
+                                <td>10</td>
+                                <td>50</td>
+                                <td>20</td>
+                                <td>70</td>
+                                <td>4</td>
+                                <td>A</td>
+                                <td>A+</td>
+                                <td>A</td>
+                                <td>3.55</td>
+                            </tr>
+                            <tr>
+                                <td>5.</td>
+                                <td>English </td>
+                                <td>75</td>
+                                <td>25</td>
+                                <td>25</td>
+                                <td>10</td>
+                                <td>50</td>
+                                <td>20</td>
+                                <td>70</td>
+                                <td>4</td>
+                                <td>A</td>
+                                <td>A+</td>
+                                <td>A</td>
+                                <td>3.55</td>
+                            </tr>
+                        </tbody>
+                        
+                        </table>
+                        <div class="card-header">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card-title"><h5>Grade Point Average</h5></div>
+                                    <p>Grade : A</p>
+                                    <p>GPA : 3.55</p>
+                                    <p>Percentage : 81%</p>
+                                    <p>Remarks : Excellent</p>                            
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-title"><h5>Legend</h5></div>
+                                <p>TH : Theoritical Marks</p>
+                                <p>PR : Practical Marks</p>
+                            </div>
+                        </div>
+                        </div> 
+                    </div>
+                </div>
+                </div>
+            </div>
 
 
-
-
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<div class="panel-title">
-						<div class="row">
-							<a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-							<div class="col-sm-6 menu">
-								<i class="fas fa-marker"></i>&nbsp;&nbsp;&nbsp;Second Terminal Examination
-							</div>
-							<div class="col-sm-6" align="right">
-								<i class="fas fa-chevron-circle-down fa-2x"></i>
-							</div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div id="collapse2" class="panel-collapse collapse">
-						<div class="panel panel-default">
-							<div class="panel-heading text-center"><p class="title">Kathmandu High School</p><p class="home-tagline">Second Terminal Examination (Shrawan-Kartik)</p></div>
-							<div class="panel-body">
-								<div class="row" id="total-contents">
-									<div class="col-md-2">
-										<label for="opt">Child's Name:</label>
-									</div>
-									<div class="col-md-2">
-										<select class="form-control" id="opt">
-											<option>Bhabin Neupane</option>
-											<option>Shailesh Neupane</option>
-											<option>Elina Neupane</option>
-											<option>Karuna Neupane</option>
-										</select>
-									</div>				
-								</div>
-								<br />
-								<div class="row" id="total-contents">
-									<div class="col-md-2">
-										<p><label>Class:</label> 9</p>
-										<p><label>Roll Number:</label> 16</p>
-										<p><label>Section:</label> B</p>
-									</div>
-								</div>
-
-								<div class="row" id="total-contents">
-									<div class="table-responsive">
-										<table class="table table-bordered table-hover">
-											<thead>
-												<tr>
-													<th class="col-md-1">S.N.</th>
-													<th class="col-md-3">Subject</th>
-													<th class="col-md-1">Full Marks</th>
-													<th class="col-md-1">Highest Marks</th>
-													<th class="col-md-1">Obtained Marks</th>
-													<th class="col-md-1">Remarks</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td class="col-md-1">1.</td>
-													<td class="col-md-3">Mathematics</td>
-													<td class="col-md-1">100</td>
-													<td class="col-md-1">99</td>
-													<td class="col-md-1">75</td>
-													<td class = "col-md-1"></td>
-												</tr>
-												<tr>
-													<td class="col-md-1">2.</td>
-													<td class="col-md-3">Science</td>
-													<td class="col-md-1">100</td>
-													<td class="col-md-1">92</td>
-													<td class="col-md-1">70</td>
-													<td class = "col-md-1"></td>
-												</tr>
-												<tr>
-													<td class="col-md-1">3.</td>
-													<td class="col-md-3">English</td>
-													<td class="col-md-1">100</td>
-													<td class="col-md-1">90</td>
-													<td class="col-md-1">80</td>
-													<td class = "col-md-1"></td>
-												</tr>
-												<tr>
-													<td class="col-md-1">4.</td>
-													<td class="col-md-3">Nepali</td>
-													<td class="col-md-1">100</td>
-													<td class="col-md-1">93</td>
-													<td class="col-md-1">80</td>
-													<td class = "col-md-1"></td>
-												</tr>
-												<tr>
-													<td class="col-md-1">5.</td>
-													<td class="col-md-3">Computer Science</td>
-													<td class="col-md-1">100</td>
-													<td class="col-md-1">99</td>
-													<td class="col-md-1">97</td>
-													<td class = "col-md-1"></td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-
-									<div class="row">
-										<div class="col-md-4">
-											<label>Total:</label> 500
-										</div>
-										<div class="col-md-4">
-											<label>Obtained Marks:</label> 402
-										</div>
-										<div class="col-md-4">
-											<label>Percentage:</label> 80.4%
-										</div>
-									</div>
-									<br />
-									<div class="row">
-										<div class="panel panel-default">
-											<div class="panel-heading">Remarks</div>
-											<div class="panel-body">
-												Good Performance, but can do well in future.
-											</div>
-										</div>
-									</div>
-									<br />
-									<div class="row">
-										<center><a href="#" class="btn btn-success" type="button">Download the result</a></center>
-									</div>
-
-								</div>
-							</div>
-						</div>
-				</div>
-			</div>
-
-		</div>
+<!-- card shadow end -->
+</div>       
 </div>
 
-<?php
-	include("footer.php")
-?>
+ 
+</div>
+      
+
+<?php require('footer.php'); ?>

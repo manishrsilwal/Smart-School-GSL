@@ -9,6 +9,7 @@ html, body{
 	height: auto;
 	overflow-x: hidden;
 	font-size: 16px;
+	font-weight: bold;
 }
 
 a{
@@ -82,4 +83,27 @@ a:hover{
 */
 .table-responsive{
 	padding: 10px;
+}
+
+.sidebar .nav>li.active-pro{
+	position: absolute;
+	width: 100%;
+	bottom: 30px;
+	padding: 10px;
+}
+
+.text-red{
+	color: red;
+}
+
+.card{
+	background-color: #FFFFFA;
+}
+
+.card .mycard{
+	padding: 0px 15px 0px 15px;
+}
+
+.sidebar-wrapper{
+	overflow-x: hidden !important;
 }
