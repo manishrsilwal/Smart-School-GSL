@@ -159,6 +159,12 @@ initHomChart();
                   beginAtZero: true,
                   maxTicksLimit: 7,
                 },
+
+                 scaleLabel:{
+                  display:true,
+                  labelString:"No of days absent"
+                },
+
                 gridLines: {
                   drawBorder: true,
                   zeroLineColor: "#ccc",
@@ -175,6 +181,10 @@ initHomChart();
                   color: '#C6C6C6',
                   zeroLineColor: "#ccc",
                   display: false,
+                },
+               scaleLabel:{
+                  display:true,
+                  labelString:"Months"
                 },
                 ticks: {
                   padding: 20,
