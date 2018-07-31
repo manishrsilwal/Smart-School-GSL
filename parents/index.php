@@ -30,7 +30,7 @@
                 <p class="card-category">2075 B.S. (2018-19 A.D.)</p>
               </div>
               <div class="card-body ">
-              <canvas id="student_attaindance"></canvas>
+              <canvas id="student_attendance"></canvas>
               <div class="float-right">
                   <button class="btn btn-success">See More Details</button>
                 </div>
@@ -165,7 +165,7 @@
   initChg();
   function initChg() {
       ctx = document.getElementById('student_academic').getContext("2d");
-      ctx1 = document.getElementById('student_attaindance').getContext("2d");
+      ctx1 = document.getElementById('student_attendance').getContext("2d");
 
         myChart = new Chart(ctx, {
           type: 'bar',

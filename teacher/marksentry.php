@@ -7,7 +7,7 @@
 		<nav aria-label="breadcrumb" role="navigation">
 		  <ol class="breadcrumb">
 		    <li class="breadcrumb-item"><a href="../teacher/">Dashboard</a></li>
-		    <li class="breadcrumb-item active" aria-current="page">Exam Section</li>
+		    <li class="breadcrumb-item active" aria-current="page">Marks Entry</li>
 		  </ol>
 		</nav>
 		<div class="row">
@@ -137,7 +137,7 @@
 						</div>
 					<div class="row">
 						<div class="col-md-12 text-center">
-							<button class="btn btn-success">Submit</button>
+							<button class="btn btn-success" onclick="demo.showNotification('success','bottom','left', '<strong>The marks has been updated.</strong>')">Submit</button>
 						</div>
 					</div>
 			</div>

@@ -6,7 +6,7 @@
 	<link rel="icon" type="image/png" href="../assets/img/favicon.png">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<title>
-	<?php if(isset($title)) echo($title.' - Smart School'); else echo "Smart School"; ?>
+	<?php if(isset($title)) echo($title); else echo "Smart School"; ?>
 	</title>
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
 	<link href="../fontawesome/css/all.css" rel="stylesheet">
@@ -52,13 +52,17 @@
 					        <p>Homework</p>
 					    </a>
 					</li>
-					<li class="nav-item <?php if(isset($exam)) echo('active'); ?>">
-						<a href="../teacher/marksentry.php" class="nav-link">
-							<i class="nc-icon nc-paper"></i>
-							<p>Exam Section</p>
-						</a>
-					</li>
-                    
+                    <li class="nav-item btn-rotate dropdown <?php if(isset($exam)) echo('active'); ?>">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="nc-icon nc-paper"></i>
+                            Exam Section &nbsp;
+                        </a>
+
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="../teacher/marksentry.php">Enter the Marks</a>
+                                    <a class="dropdown-item" href="../teacher/viewmarksheet.php">View the Marksheet</a>
+                                </div>
+                    </li>
                     <li class="active-pro">
 		              	<img src="../images/logo.png">
 		          	</li>

@@ -17,3 +17,8 @@
 #view{
 	display: none;
 }
+
+.viewtable .table tbody tr td{
+	border-right: solid 1px !important;
+	border-color: #DEE1E5 !important;
+}
