@@ -135,7 +135,7 @@ demo = {
             ticks: {
               fontColor: "#9f9f9f",
               beginAtZero: true,
-              maxTicksLimit: 5,
+              maxTicksLimit: 7,
               padding: 20
             },
             gridLines: {

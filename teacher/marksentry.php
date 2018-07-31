@@ -1,5 +1,5 @@
 <?php
-	$exam=1;$title="Exam Section";require("header.php");
+	$exam=1;$title="Marks Entry";require("header.php");
 ?>
 
 <div class="content">
@@ -7,7 +7,7 @@
 		<nav aria-label="breadcrumb" role="navigation">
 		  <ol class="breadcrumb">
 		    <li class="breadcrumb-item"><a href="../teacher/">Dashboard</a></li>
-		    <li class="breadcrumb-item active" aria-current="page">Marks Entry</li>
+		    <li class="breadcrumb-item"><a href="../teacher/examsection.php">Exam Section</a></li><li class="breadcrumb-item active" aria-current="page">Marks Entry</li>
 		  </ol>
 		</nav>
 		<div class="row">

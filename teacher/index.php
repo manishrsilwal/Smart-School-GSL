@@ -11,7 +11,11 @@
                   <h4 class="card-title">Average Marks by Class</h4>
                 </div>
                 <div class="card-body">
-					<canvas id=chartHours class="chartjs" width="undefined" height="undefined"></canvas>
+    				<div class="chartjs-wrapper">
+					<canvas id=chartHours class="chartjs" width="undefined" height="undefined" width="undefined"></canvas>
+					</div>
+					<br /><p class="card-category">
+                  	<span class="text-info"><i class="fa fa-info"></i></span> Total marks is <span class="text-info">100</span>.</p>
                     <button class="btn btn-success float-right"><a class="text-white" href="../teacher/marksdetails.php">See more details</a></button>
                 </div>
                 <div class="card-footer">

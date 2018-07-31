@@ -1,5 +1,5 @@
 <?php
-	$exam=1;$title="Exam Section";require("header.php");
+	$exam=1;$title="Class-wise Performance";require("header.php");
 ?>
 
 
@@ -8,7 +8,7 @@
 		<nav aria-label="breadcrumb" role="navigation">
 		  <ol class="breadcrumb">
 		    <li class="breadcrumb-item"><a href="../teacher/">Dashboard</a></li>
-		    <li class="breadcrumb-item"><a href="../teacher/marksentry.php">Exam Section</a></li>
+		    <li class="breadcrumb-item"><a href="../teacher/examsection.php">Exam Section</a></li>
 		    <li class="breadcrumb-item active" aria-current="page">Class wise performance</li>
 		  </ol>
 		</nav>
@@ -23,7 +23,7 @@
 						<div class="card-body">
 							<div class="row mycard">
 								<h6 class="text-success">Top Performing Students</h6>
-								<table class="table table-bordered text-success">
+								<table class="table table-bordered bg-success text-dark">
 									<thead>
 										<th>Name</th>
 										<th>Marks</th>
@@ -47,7 +47,7 @@
 
 							<div class="row mycard">
 								<h6 class="text-red">Low Performing Students</h6>
-								<table class="table table-bordered text-red">
+								<table class="table table-bordered bg-danger">
 									<thead>
 										<th>Name</th>
 										<th>Marks</th>
@@ -83,7 +83,7 @@
 						<div class="card-body">
 							<div class="row mycard">
 								<h6 class="text-success">Top Performing Students</h6>
-								<table class="table table-bordered text-success">
+								<table class="table table-bordered bg-success text-dark">
 									<thead>
 										<th>Name</th>
 										<th>Marks</th>
@@ -107,7 +107,7 @@
 
 							<div class="row mycard">
 								<h6 class="text-red">Low Performing Students</h6>
-								<table class="table table-bordered text-red">
+								<table class="table table-bordered bg-danger">
 									<thead>
 										<th>Name</th>
 										<th>Marks</th>
@@ -143,7 +143,7 @@
 						<div class="card-body">
 							<div class="row mycard">
 								<h6 class="text-success">Top Performing Students</h6>
-								<table class="table table-bordered text-success">
+								<table class="table table-bordered bg-success text-dark">
 									<thead>
 										<th>Name</th>
 										<th>Marks</th>
@@ -167,7 +167,7 @@
 
 							<div class="row mycard">
 								<h6 class="text-red">Low Performing Students</h6>
-								<table class="table table-bordered text-red">
+								<table class="table table-bordered bg-danger">
 									<thead>
 										<th>Name</th>
 										<th>Marks</th>
@@ -205,7 +205,7 @@
 						<div class="card-body">
 							<div class="row mycard">
 								<h6 class="text-success">Top Performing Students</h6>
-								<table class="table table-bordered text-success">
+								<table class="table table-bordered bg-success text-dark">
 									<thead>
 										<th>Name</th>
 										<th>Marks</th>
@@ -229,7 +229,7 @@
 
 							<div class="row mycard">
 								<h6 class="text-red">Low Performing Students</h6>
-								<table class="table table-bordered text-red">
+								<table class="table table-bordered bg-danger">
 									<thead>
 										<th>Name</th>
 										<th>Marks</th>
@@ -265,7 +265,7 @@
 						<div class="card-body">
 							<div class="row mycard">
 								<h6 class="text-success">Top Performing Students</h6>
-								<table class="table table-bordered text-success">
+								<table class="table table-bordered bg-success text-dark">
 									<thead>
 										<th>Name</th>
 										<th>Marks</th>
@@ -287,7 +287,7 @@
 								</table>
 						
 								<h6 class="text-red">Low Performing Students</h6>
-								<table class="table table-bordered text-red">
+								<table class="table table-bordered bg-danger">
 									<thead>
 										<th>Name</th>
 										<th>Marks</th>
@@ -323,7 +323,7 @@
 						<div class="card-body">
 							<div class="row mycard">
 								<h6 class="text-success">Top Performing Students</h6>
-								<table class="table table-bordered text-success">
+								<table class="table table-bordered bg-success text-dark">
 									<thead>
 										<th>Name</th>
 										<th>Marks</th>
@@ -347,7 +347,7 @@
 
 							<div class="row mycard">
 								<h6 class="text-red">Low Performing Students</h6>
-								<table class="table table-bordered text-red">
+								<table class="table table-bordered bg-danger">
 									<thead>
 										<th>Name</th>
 										<th>Marks</th>
@@ -385,7 +385,7 @@
 						<div class="card-body">
 							<div class="row mycard">
 								<h6 class="text-success">Top Performing Students</h6>
-								<table class="table table-bordered text-success">
+								<table class="table table-bordered bg-success text-dark">
 									<thead>
 										<th>Name</th>
 										<th>Marks</th>
@@ -409,7 +409,7 @@
 
 							<div class="row mycard">
 								<h6 class="text-red">Low Performing Students</h6>
-								<table class="table table-bordered text-red">
+								<table class="table table-bordered bg-danger">
 									<thead>
 										<th>Name</th>
 										<th>Marks</th>
@@ -445,7 +445,7 @@
 						<div class="card-body">
 							<div class="row mycard">
 								<h6 class="text-success">Top Performing Students</h6>
-								<table class="table table-bordered text-success">
+								<table class="table table-bordered bg-success text-dark">
 									<thead>
 										<th>Name</th>
 										<th>Marks</th>
@@ -469,7 +469,7 @@
 
 							<div class="row mycard">
 								<h6 class="text-red">Low Performing Students</h6>
-								<table class="table table-bordered text-red">
+								<table class="table table-bordered bg-danger">
 									<thead>
 										<th>Name</th>
 										<th>Marks</th>
@@ -505,7 +505,7 @@
 						<div class="card-body">
 							<div class="row mycard">
 								<h6 class="text-success">Top Performing Students</h6>
-								<table class="table table-bordered text-success">
+								<table class="table table-bordered bg-success text-dark">
 									<thead>
 										<th>Name</th>
 										<th>Marks</th>
@@ -529,7 +529,7 @@
 
 							<div class="row mycard">
 								<h6 class="text-red">Low Performing Students</h6>
-								<table class="table table-bordered text-red">
+								<table class="table table-bordered bg-danger">
 									<thead>
 										<th>Name</th>
 										<th>Marks</th>

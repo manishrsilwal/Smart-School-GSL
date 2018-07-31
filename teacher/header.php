@@ -60,7 +60,7 @@
 
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
                                     <a class="dropdown-item" href="../teacher/marksentry.php">Enter the Marks</a>
-                                    <a class="dropdown-item" href="../teacher/viewmarksheet.php">View the Marksheet</a>
+                                    <a class="dropdown-item" href="../teacher/viewmarksheet.php">View the Marks</a>
                                 </div>
                     </li>
                     <li class="active-pro">
