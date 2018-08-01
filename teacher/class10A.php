@@ -113,7 +113,7 @@ $attendance=1;$title="Class 10 'A' Performance"; require("header.php");
 								</table>
 								<div class="row">
 									<div class="col-md-12 text-center">
-										<button class="btn btn-success" onclick="demo.showNotification('success','bottom','left', '<strong>New homework has been assigned to the students.</strong>')">Update</button>
+										<button class="btn btn-success" onclick="demo.showNotification('success','bottom','left', '<strong>The attendance has been updated.</strong>')">Update</button>
 									</div>
 								</div>
 							</div>
