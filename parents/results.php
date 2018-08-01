@@ -144,7 +144,7 @@
                 <div class="container-fluid">
                 <br/>
                 <h6 class="text-center" style="font-size:30px;">Kathmandu High School</h6>
-                <h5 class="text-center" style="font-size:20px;">First Terminal Examinationinal Examination</h5>
+                <h5 class="text-center" style="font-size:20px;">First Terminal Examination</h5>
                 <div class="row">
                     <div class="col-md-4">
                         <p>Name : Bhabin Khadka</p>
@@ -292,7 +292,7 @@
                 <div class="container-fluid">
                 <br/>
                 <h6 class="text-center" style="font-size:30px;">Kathmandu High School</h6>
-                <h5 class="text-center" style="font-size:20px;">Second Terminal Examinationinal Examination</h5>
+                <h5 class="text-center" style="font-size:20px;">Second Terminal Examination</h5>
                 <div class="row">
                     <div class="col-md-4">
                         <p>Name : Bhabin Khadka</p>
@@ -437,7 +437,7 @@
                 <div class="container-fluid">
                 <br/>
                 <h6 class="text-center" style="font-size:30px;">Kathmandu High School</h6>
-                <h5 class="text-center" style="font-size:20px;">Third Terminal Examinationinal Examination</h5>
+                <h5 class="text-center" style="font-size:20px;">Third Terminal Examination</h5>
                 <div class="row">
                     <div class="col-md-4">
                         <p>Name : Bhabin Khadka</p>
