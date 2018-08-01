@@ -164,7 +164,7 @@ $attendance=1;$title="Attendance Section";require("header.php");
 											</table>
 											<div class="row">
 												<div class="col-md-12 text-center">
-													<button class="btn btn-success">Update</button>
+													<button class="btn btn-success" onclick="demo.showNotification('success','bottom','left', '<strong>The attendance has been updated.</strong>')">Update</button>
 												</div>
 											</div>
 										</div>
